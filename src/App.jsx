@@ -1,28 +1,26 @@
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import './App.css'
 import Game from './components/Game'
 import Header from './components/Header'
 import Play from './components/Play'
 
+import { Route, Routes } from 'react-router-dom'
+
 function App() {
 
   const [OptionPlayer1, setOptionPlayer1] = useState("")
-  const [result, setResult] = useState("")
 
   function selectOptionPlayer1 (option) {
     setOptionPlayer1(option)
   }
 
-
-  function changeResult(r) {
-    setResult(r)
-  }
-  
   return (
     <>
-      <Header result={result}/>
-      <Play selectOption={selectOptionPlayer1}/>
-      <Game selectedOptionPlayer1={OptionPlayer1} result={changeResult}/>
+      <Header/>
+      <Routes>
+        <Route path="/play" element={<Play selectOption={selectOptionPlayer1}/> }/>
+        <Route path="/game" element={<Game selectedOptionPlayer1={OptionPlayer1}/>}/>
+      </Routes>
     </>
   )
 }
