@@ -7,7 +7,7 @@ const Footer = () => {
 
     return (
         <div className='flex flex-col text-center'>
-            <button onClick={() => {
+            <button className="cursor-pointer bg-slate-400 p-2 rounded w-20 m-auto" onClick={() => {
                     setShowRules(true)
             }}>Regras</button>
             <div className={showRules ? "fixed inset-0 flex items-center justify-center z-50 " : "hidden"}>

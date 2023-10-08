@@ -24,7 +24,7 @@ function App() {
     <>
       <Header score={score}/>
       <Routes>
-        <Route path="/play" element={<Play selectOption={selectOptionPlayer1}/> }/>
+        <Route path="/" element={<Play selectOption={selectOptionPlayer1}/> }/>
         <Route path="/game" element={<Game selectedOptionPlayer1={OptionPlayer1} numberScore={incrementScore}/>}/>
       </Routes>
     </>

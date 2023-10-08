@@ -72,7 +72,7 @@ const Game = ({selectedOptionPlayer1, numberScore}) => {
             <div className="text-2xl p-4">
                 <p>{winOrLose()}</p>
                 <p className="cursor-pointer bg-slate-400 p-2 m-4 rounded" onClick={handleButtonClick}>
-                    <Link to="/play">Jogar Novamente</Link>
+                    <Link to="/">Jogar Novamente</Link>
                 </p>
             </div>
             <div>
