@@ -64,7 +64,7 @@ const Game = ({selectedOptionPlayer1, numberScore}) => {
         <div className="flex justify-around items-center text-center ml-16 mr-16">
             <div className="">
                 <p className="text-2xl p-4">Player 1</p>
-                <p className="bg-blue-300 p-8
+                <p className="bg-blue-300 p-6
                  rounded-full text-4xl">
                     {optionPlayer1Image}
                 </p>
@@ -77,7 +77,7 @@ const Game = ({selectedOptionPlayer1, numberScore}) => {
             </div>
             <div>
                 <p className="text-2xl p-4">Player 2</p>
-                <p className="bg-orange-700 p-8 rounded-full text-4xl">{optionPlayer2Image}</p>
+                <p className="bg-orange-700 p-6 rounded-full text-4xl">{optionPlayer2Image}</p>
             </div>
         </div>
     )
