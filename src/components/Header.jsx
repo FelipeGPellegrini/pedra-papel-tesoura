@@ -1,6 +1,6 @@
 import "../index.css"
 
-const Header = () => {
+const Header = ({score}) => {
 
 
   return (
@@ -12,7 +12,7 @@ const Header = () => {
         </div>
         <div className="border-2 p-8 rounded-xl border-black">
           <p>Score</p>
-          <p>0</p>
+          <p>{score}</p>
         </div>
       </header>
   )

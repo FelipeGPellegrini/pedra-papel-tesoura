@@ -10,16 +10,22 @@ function App() {
 
   const [OptionPlayer1, setOptionPlayer1] = useState("")
 
+  const [score, setScore] = useState(0)
+
+  function incrementScore () {
+    setScore(score + 1)
+  }
+
   function selectOptionPlayer1 (option) {
     setOptionPlayer1(option)
   }
 
   return (
     <>
-      <Header/>
+      <Header score={score}/>
       <Routes>
         <Route path="/play" element={<Play selectOption={selectOptionPlayer1}/> }/>
-        <Route path="/game" element={<Game selectedOptionPlayer1={OptionPlayer1}/>}/>
+        <Route path="/game" element={<Game selectedOptionPlayer1={OptionPlayer1} numberScore={incrementScore}/>}/>
       </Routes>
     </>
   )

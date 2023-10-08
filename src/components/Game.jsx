@@ -2,9 +2,7 @@ import "../index.css"
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
-const Game = ({selectedOptionPlayer1}) => {
-
-    const [score, setScore] = useState(0)
+const Game = ({selectedOptionPlayer1, numberScore}) => {
 
     const options = ["stone", "paper", "scissors"]
 
@@ -36,24 +34,30 @@ const Game = ({selectedOptionPlayer1}) => {
       }, [selectedOptionPlayer2])
 
 
-    function winOrLose () {
-        if(selectedOptionPlayer1 === "stone" && selectedOptionPlayer2 === "paper") {
-            return "Você perdeu!"
-        } else if(selectedOptionPlayer1 === "stone" && selectedOptionPlayer2 === "scissors") {
-            return "Você ganhou!"
-        } else if(selectedOptionPlayer1 === "paper" && selectedOptionPlayer2 === "scissors") {
-            return "Você perdeu!"
-        } else if(selectedOptionPlayer1 === "paper" && selectedOptionPlayer2 === "stone") {
-            return "Você ganhou!"
-        } else if(selectedOptionPlayer1 === "scissors" && selectedOptionPlayer2 === "stone") {
-            return "Você perdeu!"
-        } else if(selectedOptionPlayer1 === "scissors" && selectedOptionPlayer2 === "paper") {
-            return "Você ganhou!"
+      function winOrLose() {
+        if (selectedOptionPlayer1 === "stone" && selectedOptionPlayer2 === "paper") {
+          return "Você perdeu!";
+        } else if (selectedOptionPlayer1 === "stone" && selectedOptionPlayer2 === "scissors") {
+          return "Você ganhou!";
+        } else if (selectedOptionPlayer1 === "paper" && selectedOptionPlayer2 === "scissors") {
+          return "Você perdeu!";
+        } else if (selectedOptionPlayer1 === "paper" && selectedOptionPlayer2 === "stone") {
+          return "Você ganhou!";
+        } else if (selectedOptionPlayer1 === "scissors" && selectedOptionPlayer2 === "stone") {
+          return "Você perdeu!";
+        } else if (selectedOptionPlayer1 === "scissors" && selectedOptionPlayer2 === "paper") {
+          return "Você ganhou!";
         } else {
-            return "Empate!"
+          return "Empate!";
         }
-    }
+      }
 
+      function handleButtonClick() {
+        const result = winOrLose()
+        if(result === "Você ganhou!") {
+            numberScore()
+        }
+      }
 
 
     return (
@@ -67,7 +71,7 @@ const Game = ({selectedOptionPlayer1}) => {
             </div>
             <div className="text-2xl p-4">
                 <p>{winOrLose()}</p>
-                <p className="cursor-pointer bg-slate-400 p-2 m-4 rounded">
+                <p className="cursor-pointer bg-slate-400 p-2 m-4 rounded" onClick={handleButtonClick}>
                     <Link to="/play">Jogar Novamente</Link>
                 </p>
             </div>
