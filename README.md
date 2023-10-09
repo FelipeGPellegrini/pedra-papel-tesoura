@@ -4,13 +4,15 @@
 
 <p>🖥️</p>
 ---
-![image](https://github.com/FelipeGPellegrini/pedra-papel-tesoura/assets/107892258/09a0f9fd-babb-47eb-9796-7387585de1b2)
+![image](https://github.com/FelipeGPellegrini/pedra-papel-tesoura/assets/107892258/f570d893-7800-4121-8764-95cac6a09bc1)
+
 
 ---
 
 <p>📱</p>
 ---
-![image](https://github.com/FelipeGPellegrini/pedra-papel-tesoura/assets/107892258/3261df28-e3ac-44e7-a85a-171aeb736f32)
+![image](https://github.com/FelipeGPellegrini/pedra-papel-tesoura/assets/107892258/21400f96-536e-48aa-959d-d62832c37b43)
+
 
 
 
