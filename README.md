@@ -1,6 +1,22 @@
 # Projeto pedra, papel e tesoura
 
-# Tecnologias: React, TailwindCSS, Vite.
+O projeto foi desenvolvido com o objetivo de criar uma aplicação iterativa que oferece um versão digital do famoso jogo "Pedra, Papel e Tesoura".
+
+
+# Como Jogar:
+
+Acesse a URL https://pedra-papel-tesoura-2.netlify.app/.
+
+Escolha uma das três opções: pedra, papel ou tesoura.
+
+O oponente virtual fará sua escolha.
+
+O resultado do jogo será exibido na tela, indicando se você ganhou, perdeu ou empatou.
+
+A pontuação será atualizada de acordo com o resultado.
+
+
+# Tecnologias utilizadas no projeto: React, TailwindCSS, Vite.
 
 🖥️
 ---
