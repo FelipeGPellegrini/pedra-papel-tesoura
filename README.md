@@ -3,15 +3,14 @@
 # Tecnologias: React, TailwindCSS, Vite.
 
 <p>🖥️</p>
----
-![image](https://github.com/FelipeGPellegrini/pedra-papel-tesoura/assets/107892258/f570d893-7800-4121-8764-95cac6a09bc1)
+![image](https://github.com/FelipeGPellegrini/pedra-papel-tesoura/assets/107892258/a668733a-2aab-4fbc-bebc-85242f820953)
 
 
----
 
 <p>📱</p>
----
-![image](https://github.com/FelipeGPellegrini/pedra-papel-tesoura/assets/107892258/21400f96-536e-48aa-959d-d62832c37b43)
+![image](https://github.com/FelipeGPellegrini/pedra-papel-tesoura/assets/107892258/07c75d6a-899f-48f8-ab0e-625dde209d79)
+
+
 
 
 
